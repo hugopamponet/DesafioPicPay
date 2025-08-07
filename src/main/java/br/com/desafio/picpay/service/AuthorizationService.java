@@ -2,8 +2,8 @@ package br.com.desafio.picpay.service;
 
 import org.springframework.stereotype.Service;
 
+import br.com.desafio.picpay.DTO.TransferDTO;
 import br.com.desafio.picpay.client.AuthorizationClient;
-import br.com.desafio.picpay.entity.Transfer;
 import br.com.desafio.picpay.exception.PicpayException;
 
 @Service
@@ -15,7 +15,7 @@ public class AuthorizationService {
 		this.authorizationClient = authorizationClient;
 	}
 	
-	public boolean isAuthorized(Transfer transfer) {
+	public boolean isAuthorized(TransferDTO transfer) {
 		var resp = authorizationClient.isAuthorized();
 		
 		if (resp.getStatusCode().isError()) {

@@ -8,10 +8,10 @@ import br.com.desafio.picpay.DTO.AuthorizationDTO;
 
 @FeignClient(
 	    name = "authorization-service",
-	    url = "${client.authorization-service.url}"
+	    url = "https://mocki.io"
 	)
 public interface AuthorizationClient {
 
-	@GetMapping
+	@GetMapping("/v1/997bab7f-6b6e-4f17-9347-aa32b5312f05")
 	ResponseEntity<AuthorizationDTO> isAuthorized();
 }

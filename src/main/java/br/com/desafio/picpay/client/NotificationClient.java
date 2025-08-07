@@ -9,11 +9,11 @@ import br.com.desafio.picpay.entity.Transfer;
 
 @FeignClient(
 	    name = "notification-service",
-	    url = "${client.authorization-service.url}"
+	    url = "https://mocki.io"
 	)
 public interface NotificationClient {
 	
-	@PostMapping
+	@PostMapping("/v1/718f9323-c3ff-45fa-9daf-780086854daa")
 	ResponseEntity<Void> sendNotification(@RequestBody Transfer transfer);
 
 }

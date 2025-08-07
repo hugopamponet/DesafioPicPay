@@ -65,4 +65,11 @@ public class Transfer {
 	public void setValue(BigDecimal value) {
 		this.value = value;
 	}
+
+	public Transfer(Wallet sender, Wallet receiver, BigDecimal value) {
+		super();
+		this.sender = sender;
+		this.receiver = receiver;
+		this.value = value;
+	}
 }

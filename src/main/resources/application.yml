@@ -12,9 +12,3 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
-
-client:
-  authorization-service:
-    url: https://mocki.io/v1/6c16be96-7169-494d-9330-3884b468cdc7
-  notification-service:
-    url: https://mocki.io/v1/6c16be96-7169-494d-9330-3884b468cdc7

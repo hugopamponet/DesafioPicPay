@@ -19,7 +19,7 @@ public class TransferController {
 		this.transferService = transferService;
 	}
 	
-	@PostMapping
+	@PostMapping("/transfer")
 	public ResponseEntity<Transfer> transfer(@RequestBody @Valid TransferDTO dto) {
 		var resp = transferService.transfer(dto);
 				
