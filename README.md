@@ -25,7 +25,7 @@ O objetivo é praticar e validar conhecimentos adquiridos até o momento, coloca
 ## Back end
 Pré-Requistos: 
 - Java 21
-- Postgram (ou qualquer outro que você tem familiaridade)
+- Postman (ou qualquer outro que você tem familiaridade)
 - Docker
 - MySQL(ou outro banco de dados compatível, como PostgreSQL, se preferir ajustar)
 
